@@ -1,0 +1,40 @@
+/* Motion is decorative: all content is visible if scripts fail or motion is disabled. */
+.top{border-bottom:1px solid #d6b24e38}.top>a img{height:72px}.top nav a[aria-current=page]{color:var(--gold)}.button:not(.dark):not(.outline){background:linear-gradient(120deg,#e2c36c,#d0a944);color:#151515;border-color:#e3c572}.button:not(.dark):not(.outline):hover{background:linear-gradient(120deg,#edda99,#dbb752)}.promise-strip{color:#65522e}.booking-section .eyebrow,.hero .eyebrow{color:#e6c975}.route-meta{color:#806324}.service-number{color:#6e5423}.builder{border-top:3px solid var(--gold)}.hero:after{background:linear-gradient(90deg,#0c0d10c4,#0c0d1060 65%,#0c0d1022),linear-gradient(0deg,#111214b8,transparent 40%)}.contact-back{color:#faf8f3}.booking-section{border-bottom:1px solid #d6b24e38}@media(max-width:720px){.top>a img{height:60px}.hero:after{background:linear-gradient(90deg,#0c0d10cc,#0c0d106b),linear-gradient(0deg,#111214bb,transparent)}}
+.hero,.route-image{overflow:hidden}.hero-photo,.service-photo img,.route-image img{transform-origin:center}.about{overflow:clip}
+@media(prefers-reduced-motion:no-preference){
+ .hero-photo{animation:landscape-arrival 5s cubic-bezier(.16,1,.3,1) both!important}
+ .hero-content>.eyebrow{animation:hero-arrival 1s .1s both!important}
+ .hero h1{animation:hero-arrival 1.2s .25s both!important}
+ .hero-content>p{animation:hero-arrival 1.2s .45s both!important}
+ .hero-actions{animation:hero-arrival 1.2s .65s both!important}
+ .hero-actions .button{animation:invitation-glow 3.8s 2s 2}
+ .route-image img{animation:route-image-arrival 1.2s cubic-bezier(.16,1,.3,1) both}
+ .route-description>*{animation:detail-arrival .8s both}
+ .route-description>h3{animation-delay:.12s}.route-description>p{animation-delay:.22s}.route-description>.route-stops{animation-delay:.32s}.route-description>.preview-actions{animation-delay:.42s}
+}
+@keyframes invitation-glow{0%,100%{box-shadow:0 0 0 0 #d6b24e00}45%{box-shadow:0 0 0 9px #d6b24e24}}
+@keyframes route-image-arrival{from{opacity:.35;clip-path:inset(0 100% 0 0)}to{opacity:1;clip-path:inset(0 0 0 0)}}
+@keyframes detail-arrival{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
+html{scrollbar-width:thin;scrollbar-color:#a78a43 #eeeae2;scrollbar-gutter:stable}
+::-webkit-scrollbar{width:10px;height:10px}
+::-webkit-scrollbar-track{background:#eeeae2}
+::-webkit-scrollbar-thumb{background:#a78a43;border:3px solid #eeeae2;border-radius:20px}
+::-webkit-scrollbar-thumb:hover{background:#76612e}
+.top{transition:box-shadow .25s,border-color .25s}
+.top.is-scrolled{box-shadow:0 5px 24px #10111420;border-bottom-color:#ffffff18}
+.back-to-top{position:fixed;right:24px;bottom:25px;z-index:35;display:grid;place-items:center;width:44px;height:44px;border:1px solid #b6a875;border-radius:50%;background:var(--charcoal);color:var(--cream);box-shadow:0 4px 18px #11121420;font-size:20px;opacity:0;visibility:hidden;transform:translateY(10px);transition:opacity .2s,transform .2s,visibility .2s,background .2s}
+.back-to-top.is-visible{opacity:1;visibility:visible;transform:translateY(0)}
+.back-to-top:hover{background:var(--accent)}
+@media(max-width:720px){.back-to-top{right:16px;bottom:calc(84px + env(safe-area-inset-bottom));width:40px;height:40px}}
+.reading-progress{position:fixed;top:0;left:0;right:0;height:3px;z-index:60;background:var(--gold);transform:scaleX(0);transform-origin:left;pointer-events:none}
+.section-heading h2{max-width:18ch}.hero h1{max-width:12.5em;text-wrap:balance}.hero-content p{text-wrap:pretty}.contact-invite h2{max-width:13ch}.service-card{transition:box-shadow .3s,border-color .3s}.service-body h3{min-height:2.6em}.top nav a{position:relative;padding-block:8px}.top nav a:after{content:'';position:absolute;left:0;right:0;bottom:0;height:1px;background:var(--gold);transform:scaleX(0);transform-origin:left;transition:transform .25s}.top nav a[aria-current=page]:after{transform:scaleX(1)}.button{position:relative;overflow:hidden}.button:after{content:'';position:absolute;inset:-70% auto -70% -65%;width:35%;background:linear-gradient(90deg,transparent,#fff5,transparent);transform:rotate(25deg);pointer-events:none}.route-tabs button{transition:background .2s,color .2s,box-shadow .2s}.faq-section summary:after{transition:transform .25s}.form-grid input,.form-grid select,.form-grid textarea{transition:border-color .2s,background .2s}.form-grid input:focus,.form-grid select:focus,.form-grid textarea:focus{border-color:var(--gold);background:#ffffff10}.complaints-link{transition:transform .25s,filter .25s}.contact-item{overflow-wrap:anywhere}
+@media(hover:hover){.top nav a:hover:after{transform:scaleX(1)}.service-card:hover{box-shadow:0 14px 32px #11121412;border-color:#c4b58e}.button:hover:after{animation:button-glint .65s ease-out}.complaints-link:hover{transform:translateY(-3px);filter:brightness(1.05)}.route-tabs button:hover{box-shadow:0 3px 12px #11121412}}
+@media(prefers-reduced-motion:no-preference){.hero-photo{animation:landscape-arrival 9s ease-out both}.hero-content>.eyebrow{animation:hero-arrival .7s .05s both}.hero h1{animation:hero-arrival .8s .16s both}.hero-content>p{animation:hero-arrival .8s .27s both}.hero-actions{animation:hero-arrival .8s .38s both}.hero-bottom{animation:hero-arrival .8s .5s both}.faq-section details[open]>p{animation:answer-arrival .3s ease-out}#request-preview:not([hidden]){animation:answer-arrival .35s ease-out}#mobile-nav:not([hidden]){animation:answer-arrival .22s ease-out}}
+@keyframes hero-arrival{from{opacity:0;transform:translateY(42px)}to{opacity:1;transform:translateY(0)}}
+@keyframes landscape-arrival{from{transform:scale(1.13)}to{transform:scale(1)}}
+@keyframes answer-arrival{from{opacity:0;transform:translateY(-5px)}to{opacity:1;transform:translateY(0)}}
+@keyframes button-glint{from{left:-65%}to{left:145%}}
+@media(max-width:540px){.services{grid-template-columns:1fr;gap:22px}.service-photo img{height:245px}.service-body{padding:24px}.service-body h3{min-height:0;font-size:27px}.service-body p{font-size:14px;margin-bottom:22px}.service-body .text-link{font-size:13px;min-height:36px}.hero{min-height:610px}.hero h1{font-size:clamp(38px,10vw,54px)}.footer-logos{column-gap:25px;row-gap:20px}.section-heading h2{max-width:16ch}}
+@media(prefers-reduced-motion:reduce){.reading-progress{display:none}*,*:before,*:after{animation:none!important;transition:none!important}}
+
+

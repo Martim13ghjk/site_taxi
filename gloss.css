@@ -1,0 +1,45 @@
+/* Lighter surfaces and a restrained glass finish in the brand palette. */
+.motion-toggle{position:fixed;bottom:18px;left:18px;z-index:35;padding:10px 15px;min-height:40px;border:1px solid #d8cbaa99;border-radius:24px;background:#fffaf0cc;color:#39342a;-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);box-shadow:inset 0 1px #fff9,0 4px 16px #29201712;font-size:11px}.motion-toggle:hover{background:#fffaf0ed}@media(max-width:720px){.motion-toggle{bottom:calc(84px + env(safe-area-inset-bottom));left:12px}}
+#language{display:grid;place-items:center;min-width:44px;min-height:44px;padding:12px;background:transparent;border:0;border-radius:0;opacity:.85;transition:opacity .2s}#language img{width:22px;height:15px;border-radius:1px;box-shadow:none}#language:hover{background:transparent;opacity:1}
+:root{--charcoal:#25262a;--cream:#fdfbf7;--muted:#69635a}
+body{background:linear-gradient(135deg,#fffdf9,#f6f1e8)}
+.top{background:linear-gradient(120deg,#ffffff28,#25262a60 48%,#ffffff12);-webkit-backdrop-filter:blur(24px) saturate(150%);backdrop-filter:blur(24px) saturate(150%);border-bottom:1px solid #ffffff45;box-shadow:inset 0 1px #ffffff40,0 6px 24px #00000012;text-shadow:0 1px 8px #0008}
+body:has(.hero) .top{margin-bottom:-84px}
+body:has(.hero) .hero{height:auto;min-height:100svh;max-height:none;padding-top:154px}
+.contact-page{min-height:75svh}
+body:has(.contact-page) .top{background:linear-gradient(120deg,#ffffff70,#ffffff30 48%,#eadbb74a);-webkit-backdrop-filter:blur(24px) saturate(150%);backdrop-filter:blur(24px) saturate(150%);color:#292824;text-shadow:none;border-bottom:1px solid #ffffffb3;box-shadow:inset 0 1px #fff,0 6px 24px #5f4a2210}
+body:has(.contact-page) .header-actions>button{color:#292824}
+body:has(.contact-page) .top nav a[aria-current=page]{color:#806324}
+@media(max-width:720px){body:has(.contact-page) .top #mobile-nav:not([hidden]){background:#fffaf0eb;color:#292824}body:has(.contact-page) .top #mobile-nav a{border-bottom-color:#d9c9a780}}
+@media(max-width:720px){body:has(.hero) .top{margin-bottom:-74px}body:has(.hero) .hero{height:auto;min-height:100svh;max-height:none;padding-top:135px}}
+.top.is-scrolled{box-shadow:0 8px 30px #24201715,inset 0 1px #ffffff20}
+.hero:after{background:linear-gradient(90deg,#15161b91,#15161b30 65%,#15161b08),linear-gradient(0deg,#17181d70,transparent 50%)}
+.hero h1,.hero-content>p{text-shadow:0 2px 20px #0008}
+.hero-content>p{color:#fffaf0}
+.hero .eyebrow{color:#fff0be;text-shadow:0 1px 6px #0008}
+.service-card,.builder{background:linear-gradient(135deg,#ffffffed,#fffaf0c9);border-color:#d8cdb880;box-shadow:0 8px 30px #68502a08,inset 0 1px #fff}
+.service-photo:after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,#ffffff20,transparent 55%);pointer-events:none}
+.service-number{background:#ffffffc9;border:1px solid #ffffffb3;-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border-radius:4px}
+.routes-section{background:linear-gradient(130deg,#f2ede3,#faf7f0 55%,#eee7d8)}
+.route-layout{background:linear-gradient(135deg,#ffffffd9,#fff9edbd);border-color:#d9cebb;box-shadow:0 12px 34px #68502a0a}
+.contact-invite{background:linear-gradient(120deg,#f0e5ca,#fcf8ee 60%,#f3ead6);box-shadow:inset 0 1px #fff,inset 0 -1px #d4c6ab60}
+.button:not(.dark):not(.outline){background:linear-gradient(165deg,#f5e5ac 0%,#e3c36b 48%,#cfaa4d 50%,#e7ca7c 100%);border-color:#ecd79b;box-shadow:inset 0 1px #fff9,inset 0 -1px #98752c35,0 4px 12px #a67b1d1a}
+.button:not(.dark):not(.outline):hover{background:linear-gradient(165deg,#fff0c1,#efd68a 48%,#dfbd66 50%,#f2da9b)}
+.contact-page{background:radial-gradient(ellipse at 0 25%,#e6d4a266,transparent 55%),linear-gradient(125deg,#fffdf9,#f1ebe1)}
+.contact-back{background:transparent;color:#34312c}
+.contact-page .booking-section{background:transparent;color:var(--ink);border-bottom:1px solid #d9cdb6}
+.booking-intro>p{color:#686056}
+.booking-section .eyebrow{color:#806324}
+.contact-item{border-color:#cdbf9f80}
+.booking-intro .configuration-note{color:#686056;background:#ffffff70;border-color:#d5c7aa;border-radius:8px}
+#booking-form{padding:30px;background:linear-gradient(145deg,#ffffffd9,#fffcf5a6);border:1px solid #fff;border-radius:12px;box-shadow:0 16px 50px #5744220d,inset 0 1px #fff;-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px)}
+.form-grid input,.form-grid select,.form-grid textarea{background:#ffffffb3;color:#252525;border-color:#c9bdab;color-scheme:light;box-shadow:inset 0 1px 3px #594b2e05}
+.form-grid select option{background:#fff;color:#252525}
+.form-grid input::placeholder,.form-grid textarea::placeholder{color:#81786b}
+.form-grid input:focus,.form-grid select:focus,.form-grid textarea:focus{background:#fff;border-color:#a78637}
+.form-hint{color:#72695c}
+#request-preview{border-color:#d4c7b1}
+#copy-status{color:#745919}
+footer{background:#ffffff7a}
+.back-to-top{background:linear-gradient(145deg,#48494ce6,#25262ae6);-webkit-backdrop-filter:blur(15px);backdrop-filter:blur(15px);box-shadow:inset 0 1px #ffffff30,0 5px 20px #0002}
+@media(max-width:720px){.hero:after{background:linear-gradient(90deg,#15161ba6,#15161b42),linear-gradient(0deg,#17181d75,transparent 60%)}.top #mobile-nav:not([hidden]){background:#303137ed;-webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px)}#booking-form{padding:23px 18px}.mobile-bar{background:#292a30e8;-webkit-backdrop-filter:blur(18px);backdrop-filter:blur(18px);border-top-color:#e4ce934a}.mobile-bar a{background:linear-gradient(160deg,#f1dea0,#d7b153)}.mobile-bar a+a{background:#ffffff0d}}
